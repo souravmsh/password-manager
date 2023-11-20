@@ -1,0 +1,28 @@
+{
+    "name": "souravmsh/password-manager",
+    "description": "A package for managing the laravel application password",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Md. Shohrab Hossain",
+            "email": "sourav.diubd@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "laravelcollective/html":"v6.x"
+    },
+    "autoload": {
+        "psr-4": {
+            "Souravmsh\\PasswordManager\\": "src/"
+        }
+    },
+    "extra": {
+      "laravel": {
+          "providers": [
+              "Souravmsh\\PasswordManager\\PackageServiceProvider"
+          ]
+      }
+  }
+}
